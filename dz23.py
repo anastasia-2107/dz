@@ -1,10 +1,4 @@
 class Car:
-    model = "model"
-    year = "0000"
-    manufacturer = "manufacturer"
-    power = "power"
-    color = "color"
-    price = "0000000"
 
     def __init__(self, model, year, manufacturer, power, color, price):  # инициализатор
         self.model = model
@@ -21,27 +15,41 @@ class Car:
               f"Цвет машины: {self.color}\nЦена: {self.price}")
         print("=" * 40)
 
-    # def set_name(self, model, year, manufacturer, power, color, price):  # устанавливаем новое имя
-    #     self.model = model
-    #     self.year = year
-    #     self.manufacturer = manufacturer
-    #     self.power = power
-    #     self.color = color
-    #     self.price = price
+    def set_model(self, model):
+        self.model = model
 
-    # def get_name(self):  # получаем имя
-    #     self.model = model
-    #     self.year = year
-    #     self.manufacturer = manufacturer
-    #     self.power = power
-    #     self.color = color
-    #     self.price = price
+    def get_model(self, model):
+        return self.model
 
+    def set_year(self, year):
+        self.year = year
 
-h1 = Car()
+    def get_year(self, year):
+        return self.year
+
+    def set_manufacturer(self, manufacturer):
+        self.manufacturer = manufacturer
+
+    def get_manufacturer(self, manufacturer):
+        return self.manufacturer
+
+    def set_power(self, power):
+        self.power = power
+
+    def get_power(self, power):
+        return self.power
+
+    def set_color(self, color):
+        self.color = color
+
+    def get_color(self, color):
+        return self.color
+
+    def set_price(self, price):
+        self.price = price
+
+    def get_price(self, price):
+        return self.price
+
+h1 = Car("X7 V50i", "2021", "BMW", "530 л.с.", "white", "10790000")
 h1.print_info()
-# h1.input_info("Юля", "23.05.1986", "45-46-98", "Россия", "Москва", "Чистопрудный бульвар, 1A")
-# h1.print_info()
-# h1.set_name("Юлия")
-# h1.print_info()
-# print(h1.get_name())
