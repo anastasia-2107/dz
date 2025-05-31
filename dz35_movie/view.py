@@ -17,7 +17,9 @@ class UserInterface:
         print("Действия с фильмами:")
         print("1 - добавление фильма"
               "\n2 - каталог фильмов"
-            "\nq - выход из программы")
+              "\n3 - просмотр определенного фильма"
+              "\n4 - удаление фильма"
+              "\nq - выход из программы")
         user_answer = input("Выберите вариант действия: ")
         # print("=" * 50)
         return user_answer
@@ -45,6 +47,29 @@ class UserInterface:
         for ind, movie in enumerate(movies, 1):
             print(f"{ind}. {movie}")
         # print("=" * 50)
+
+    @add_title("Ввод названия фильма:")
+    def get_user_movie(self):
+        user_movie = input("Введите название фильма: ")
+        return user_movie
+
+    @add_title("Просмотр информации о фильме:")
+    def show_single_movie(self, movie):
+        for key in movie:
+            print(f"{key} фильма - {movie[key]}")
+
+    @add_title("Сообщение об ошибке:")
+    def show_incorrect_title_error(self, user_title):
+        print(f"Фильма с названием {user_title} не существует")
+
+    @add_title("Удаление фильма:")
+    def remove_single_movie(self, movie):
+        print(f"Фильм {movie} - был удален")
+
+    @add_title("Сообщение об ошибке:")
+    def show_incorrect_answer_error(self, answer):
+        print(f"Варианта {answer} не существует")
+
 
 
 
