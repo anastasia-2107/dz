@@ -1,0 +1,33 @@
+body{
+background: rgb(236, 236, 229);
+margin: 0;
+padding: 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background: rgb(138, 149, 254);
+    padding: 10px;
+    margin-top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: dotted;
+}
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.flash{
+    padding: 10px;
+}
+.success{
+    border: 1px solid green;
+    background: rgb(227, 255, 227)
+}
+.error{
+    border: 1px solid red;
+    background: rgb(253, 225, 225)
+}
