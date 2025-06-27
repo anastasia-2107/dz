@@ -13,6 +13,10 @@ padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: dotted;
 }
+.menu a{
+    font-weight: bold;
+    color: rgb(149, 103, 103);
+}
 .content{
     max-width: 1200px;
     margin: 0 auto;

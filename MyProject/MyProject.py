@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, flash, g
 import sqlite3
 import os
 
+from fdatabase import FDataBase
+
 # app = Flask(__name__)
 # app.config['SECRET_KEY'] = 'kjdfkreg5f4hf4s5f4gn8f7gn45xf4b5d4n5fg'
 
