@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'skills.apps.SkillsConfig',
     'blog.apps.BlogConfig',
+    'todo.apps.TodoConfig',
 ]
 
 MIDDLEWARE = [
